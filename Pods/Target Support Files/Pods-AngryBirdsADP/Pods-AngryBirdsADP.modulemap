@@ -1,0 +1,6 @@
+framework module Pods_AngryBirdsADP {
+  umbrella header "Pods-AngryBirdsADP-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2631F699618FBE4BA694917E /* Pods_AngryBirdsADP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB7242DC112805D2CBCAE6B /* Pods_AngryBirdsADP.framework */; };
+		59FE79ACC0802DB09729A214 /* Pods_AngryBirdsADPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3B2AC766114892D461064A /* Pods_AngryBirdsADPTests.framework */; };
+		97135F82238AA223002F464D /* LevelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97135F81238AA223002F464D /* LevelBuilder.swift */; };
+		97135F84238AA32C002F464D /* Level1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97135F83238AA32C002F464D /* Level1.swift */; };
+		97135F86238AA3CE002F464D /* Level2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97135F85238AA3CE002F464D /* Level2.swift */; };
+		97135F88238AA5AF002F464D /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97135F87238AA5AF002F464D /* Memento.swift */; };
+		97135F8A238AA803002F464D /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97135F89238AA803002F464D /* GameObject.swift */; };
+		97135F8C238AA825002F464D /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97135F8B238AA825002F464D /* Visitor.swift */; };
+		97135F8E238AB021002F464D /* BlockMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97135F8D238AB021002F464D /* BlockMock.swift */; };
+		97135F90238AB389002F464D /* BirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97135F8F238AB389002F464D /* BirdTests.swift */; };
+		97135F92238AB39B002F464D /* BirdMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97135F91238AB39B002F464D /* BirdMock.swift */; };
+		971699DB237774C300AB5B1D /* BirdStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971699DA237774C300AB5B1D /* BirdStrategy.swift */; };
+		971699DD2377842C00AB5B1D /* GameScene_3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 971699DC2377842C00AB5B1D /* GameScene_3.sks */; };
+		971699DF2377845000AB5B1D /* GameScene_2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 971699DE2377845000AB5B1D /* GameScene_2.sks */; };
+		971699E22378067F00AB5B1D /* SlingshotState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971699E12378067F00AB5B1D /* SlingshotState.swift */; };
+		972B2E31235F8055001D2005 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B2E30235F8055001D2005 /* GameModel.swift */; };
+		973CB48E238B032300122944 /* GameModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973CB48D238B032300122944 /* GameModelTests.swift */; };
+		973CE50E2360B88100ACE9D5 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973CE50D2360B88100ACE9D5 /* Enemy.swift */; };
+		976C6CC32358DFA400A60921 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976C6CC22358DFA400A60921 /* Block.swift */; };
+		976E7287235DE23800B7F70F /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E7286235DE23800B7F70F /* LevelScene.swift */; };
+		976E7289235DE86D00B7F70F /* SpriteKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E7288235DE86D00B7F70F /* SpriteKitButton.swift */; };
+		977364822360C641008DC47F /* RealSlingshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977364812360C641008DC47F /* RealSlingshot.swift */; };
+		977364842361B96E008DC47F /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977364832361B96E008DC47F /* Camera.swift */; };
+		9787901E234EF73E00DDCFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787901D234EF73E00DDCFC8 /* AppDelegate.swift */; };
+		97879020234EF73E00DDCFC8 /* GameScene_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9787901F234EF73E00DDCFC8 /* GameScene_1.sks */; };
+		97879024234EF73E00DDCFC8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97879023234EF73E00DDCFC8 /* GameScene.swift */; };
+		97879026234EF73E00DDCFC8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97879025234EF73E00DDCFC8 /* GameViewController.swift */; };
+		97879029234EF73E00DDCFC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97879027234EF73E00DDCFC8 /* Main.storyboard */; };
+		9787902B234EF74100DDCFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9787902A234EF74100DDCFC8 /* Assets.xcassets */; };
+		9787902E234EF74100DDCFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9787902C234EF74100DDCFC8 /* LaunchScreen.storyboard */; };
+		97879039234EF74100DDCFC8 /* BlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97879038234EF74100DDCFC8 /* BlockTests.swift */; };
+		97879044234EF74200DDCFC8 /* AngryBirdsADPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97879043234EF74200DDCFC8 /* AngryBirdsADPUITests.swift */; };
+		97879052234F010F00DDCFC8 /* BirdTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97879051234F010F00DDCFC8 /* BirdTileSet.sks */; };
+		97BAC983234F0F7100525759 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BAC982234F0F7100525759 /* GameCamera.swift */; };
+		97BAC985234F2FF000525759 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BAC984234F2FF000525759 /* Configuration.swift */; };
+		97BAC987234F336400525759 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BAC986234F336400525759 /* Bird.swift */; };
+		97D3DB7A2386E60A00EED656 /* ProxySlingshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D3DB792386E60A00EED656 /* ProxySlingshot.swift */; };
+		97D3DB7C2386E67000EED656 /* SceneCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D3DB7B2386E67000EED656 /* SceneCommand.swift */; };
+		97DAAC0C237716EE0080FBDA /* GameObjectsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DAAC0B237716EE0080FBDA /* GameObjectsFactory.swift */; };
+		FAE879D6317002F048F62CD9 /* Pods_AngryBirdsADP_AngryBirdsADPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9569AC900B4E3D00C92EB8C6 /* Pods_AngryBirdsADP_AngryBirdsADPUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97879035234EF74100DDCFC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97879012234EF73E00DDCFC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97879019234EF73E00DDCFC8;
+			remoteInfo = AngryBirdsADP;
+		};
+		97879040234EF74200DDCFC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97879012234EF73E00DDCFC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97879019234EF73E00DDCFC8;
+			remoteInfo = AngryBirdsADP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D56E165BC190EDB9D9CF57D /* Pods-AngryBirdsADP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngryBirdsADP.debug.xcconfig"; path = "Target Support Files/Pods-AngryBirdsADP/Pods-AngryBirdsADP.debug.xcconfig"; sourceTree = "<group>"; };
+		0DBDA93BC1C2D61C135E5057 /* Pods-AngryBirdsADP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngryBirdsADP.release.xcconfig"; path = "Target Support Files/Pods-AngryBirdsADP/Pods-AngryBirdsADP.release.xcconfig"; sourceTree = "<group>"; };
+		1133E25E187DD1CEC1086388 /* Pods-AngryBirdsADPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngryBirdsADPTests.release.xcconfig"; path = "Target Support Files/Pods-AngryBirdsADPTests/Pods-AngryBirdsADPTests.release.xcconfig"; sourceTree = "<group>"; };
+		3AA234B1239C11BADA68C471 /* Pods-AngryBirdsADP-AngryBirdsADPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngryBirdsADP-AngryBirdsADPUITests.release.xcconfig"; path = "Target Support Files/Pods-AngryBirdsADP-AngryBirdsADPUITests/Pods-AngryBirdsADP-AngryBirdsADPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7078607657BADC64F41E883C /* Pods-AngryBirdsADP-AngryBirdsADPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngryBirdsADP-AngryBirdsADPUITests.debug.xcconfig"; path = "Target Support Files/Pods-AngryBirdsADP-AngryBirdsADPUITests/Pods-AngryBirdsADP-AngryBirdsADPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FB7242DC112805D2CBCAE6B /* Pods_AngryBirdsADP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngryBirdsADP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9569AC900B4E3D00C92EB8C6 /* Pods_AngryBirdsADP_AngryBirdsADPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngryBirdsADP_AngryBirdsADPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97135F81238AA223002F464D /* LevelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBuilder.swift; sourceTree = "<group>"; };
+		97135F83238AA32C002F464D /* Level1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1.swift; sourceTree = "<group>"; };
+		97135F85238AA3CE002F464D /* Level2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level2.swift; sourceTree = "<group>"; };
+		97135F87238AA5AF002F464D /* Memento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
+		97135F89238AA803002F464D /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		97135F8B238AA825002F464D /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
+		97135F8D238AB021002F464D /* BlockMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockMock.swift; sourceTree = "<group>"; };
+		97135F8F238AB389002F464D /* BirdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdTests.swift; sourceTree = "<group>"; };
+		97135F91238AB39B002F464D /* BirdMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdMock.swift; sourceTree = "<group>"; };
+		971699DA237774C300AB5B1D /* BirdStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdStrategy.swift; sourceTree = "<group>"; };
+		971699DC2377842C00AB5B1D /* GameScene_3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene_3.sks; sourceTree = "<group>"; };
+		971699DE2377845000AB5B1D /* GameScene_2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene_2.sks; sourceTree = "<group>"; };
+		971699E02378042B00AB5B1D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		971699E12378067F00AB5B1D /* SlingshotState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlingshotState.swift; sourceTree = "<group>"; };
+		972B2E30235F8055001D2005 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		973CB48D238B032300122944 /* GameModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModelTests.swift; sourceTree = "<group>"; };
+		973CE50D2360B88100ACE9D5 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		976C6CC22358DFA400A60921 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		976E7286235DE23800B7F70F /* LevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
+		976E7288235DE86D00B7F70F /* SpriteKitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitButton.swift; sourceTree = "<group>"; };
+		977364812360C641008DC47F /* RealSlingshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealSlingshot.swift; sourceTree = "<group>"; };
+		977364832361B96E008DC47F /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		9787901A234EF73E00DDCFC8 /* AngryBirdsADP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryBirdsADP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9787901D234EF73E00DDCFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9787901F234EF73E00DDCFC8 /* GameScene_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene_1.sks; sourceTree = "<group>"; };
+		97879023234EF73E00DDCFC8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		97879025234EF73E00DDCFC8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		97879028234EF73E00DDCFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9787902A234EF74100DDCFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9787902D234EF74100DDCFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9787902F234EF74100DDCFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97879034234EF74100DDCFC8 /* AngryBirdsADPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryBirdsADPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97879038234EF74100DDCFC8 /* BlockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTests.swift; sourceTree = "<group>"; };
+		9787903A234EF74100DDCFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9787903F234EF74200DDCFC8 /* AngryBirdsADPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryBirdsADPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97879043234EF74200DDCFC8 /* AngryBirdsADPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryBirdsADPUITests.swift; sourceTree = "<group>"; };
+		97879045234EF74200DDCFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97879051234F010F00DDCFC8 /* BirdTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BirdTileSet.sks; sourceTree = "<group>"; };
+		97BAC982234F0F7100525759 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
+		97BAC984234F2FF000525759 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		97BAC986234F336400525759 /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		97D3DB792386E60A00EED656 /* ProxySlingshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxySlingshot.swift; sourceTree = "<group>"; };
+		97D3DB7B2386E67000EED656 /* SceneCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCommand.swift; sourceTree = "<group>"; };
+		97DAAC0B237716EE0080FBDA /* GameObjectsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObjectsFactory.swift; sourceTree = "<group>"; };
+		BA3B2AC766114892D461064A /* Pods_AngryBirdsADPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngryBirdsADPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0B0D2ACD254F6B13C17A93 /* Pods-AngryBirdsADPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngryBirdsADPTests.debug.xcconfig"; path = "Target Support Files/Pods-AngryBirdsADPTests/Pods-AngryBirdsADPTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97879017234EF73E00DDCFC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2631F699618FBE4BA694917E /* Pods_AngryBirdsADP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97879031234EF74100DDCFC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59FE79ACC0802DB09729A214 /* Pods_AngryBirdsADPTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9787903C234EF74200DDCFC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE879D6317002F048F62CD9 /* Pods_AngryBirdsADP_AngryBirdsADPUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FBFB1932E21E1DA4E5F6C4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FB7242DC112805D2CBCAE6B /* Pods_AngryBirdsADP.framework */,
+				9569AC900B4E3D00C92EB8C6 /* Pods_AngryBirdsADP_AngryBirdsADPUITests.framework */,
+				BA3B2AC766114892D461064A /* Pods_AngryBirdsADPTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		859F9AA71C52A3E8DFD3FC76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D56E165BC190EDB9D9CF57D /* Pods-AngryBirdsADP.debug.xcconfig */,
+				0DBDA93BC1C2D61C135E5057 /* Pods-AngryBirdsADP.release.xcconfig */,
+				7078607657BADC64F41E883C /* Pods-AngryBirdsADP-AngryBirdsADPUITests.debug.xcconfig */,
+				3AA234B1239C11BADA68C471 /* Pods-AngryBirdsADP-AngryBirdsADPUITests.release.xcconfig */,
+				FB0B0D2ACD254F6B13C17A93 /* Pods-AngryBirdsADPTests.debug.xcconfig */,
+				1133E25E187DD1CEC1086388 /* Pods-AngryBirdsADPTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		97879011234EF73E00DDCFC8 = {
+			isa = PBXGroup;
+			children = (
+				9787901C234EF73E00DDCFC8 /* AngryBirdsADP */,
+				97879037234EF74100DDCFC8 /* AngryBirdsADPTests */,
+				97879042234EF74200DDCFC8 /* AngryBirdsADPUITests */,
+				9787901B234EF73E00DDCFC8 /* Products */,
+				859F9AA71C52A3E8DFD3FC76 /* Pods */,
+				3FBFB1932E21E1DA4E5F6C4D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9787901B234EF73E00DDCFC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9787901A234EF73E00DDCFC8 /* AngryBirdsADP.app */,
+				97879034234EF74100DDCFC8 /* AngryBirdsADPTests.xctest */,
+				9787903F234EF74200DDCFC8 /* AngryBirdsADPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9787901C234EF73E00DDCFC8 /* AngryBirdsADP */ = {
+			isa = PBXGroup;
+			children = (
+				9787902F234EF74100DDCFC8 /* Info.plist */,
+				971699E02378042B00AB5B1D /* README.md */,
+				97BAC981234F0F4B00525759 /* Custom Nodes */,
+				97879058234F08AD00DDCFC8 /* TileSets */,
+				97879057234F08A600DDCFC8 /* Resources */,
+				97879055234F089300DDCFC8 /* ViewController */,
+				97879054234F084F00DDCFC8 /* Template */,
+				97879053234F084800DDCFC8 /* Scenes */,
+			);
+			path = AngryBirdsADP;
+			sourceTree = "<group>";
+		};
+		97879037234EF74100DDCFC8 /* AngryBirdsADPTests */ = {
+			isa = PBXGroup;
+			children = (
+				97135F8F238AB389002F464D /* BirdTests.swift */,
+				97879038234EF74100DDCFC8 /* BlockTests.swift */,
+				973CB48D238B032300122944 /* GameModelTests.swift */,
+				9787903A234EF74100DDCFC8 /* Info.plist */,
+				97135F8D238AB021002F464D /* BlockMock.swift */,
+				97135F91238AB39B002F464D /* BirdMock.swift */,
+			);
+			path = AngryBirdsADPTests;
+			sourceTree = "<group>";
+		};
+		97879042234EF74200DDCFC8 /* AngryBirdsADPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97879043234EF74200DDCFC8 /* AngryBirdsADPUITests.swift */,
+				97879045234EF74200DDCFC8 /* Info.plist */,
+			);
+			path = AngryBirdsADPUITests;
+			sourceTree = "<group>";
+		};
+		97879053234F084800DDCFC8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				97879023234EF73E00DDCFC8 /* GameScene.swift */,
+				976E7286235DE23800B7F70F /* LevelScene.swift */,
+				9787901F234EF73E00DDCFC8 /* GameScene_1.sks */,
+				971699DE2377845000AB5B1D /* GameScene_2.sks */,
+				971699DC2377842C00AB5B1D /* GameScene_3.sks */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		97879054234F084F00DDCFC8 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				97BAC984234F2FF000525759 /* Configuration.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		97879055234F089300DDCFC8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				97879025234EF73E00DDCFC8 /* GameViewController.swift */,
+				972B2E30235F8055001D2005 /* GameModel.swift */,
+				97135F81238AA223002F464D /* LevelBuilder.swift */,
+				97135F83238AA32C002F464D /* Level1.swift */,
+				97135F85238AA3CE002F464D /* Level2.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		97879057234F08A600DDCFC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97D3DB7B2386E67000EED656 /* SceneCommand.swift */,
+				97135F8B238AA825002F464D /* Visitor.swift */,
+				97135F87238AA5AF002F464D /* Memento.swift */,
+				9787901D234EF73E00DDCFC8 /* AppDelegate.swift */,
+				97879027234EF73E00DDCFC8 /* Main.storyboard */,
+				9787902A234EF74100DDCFC8 /* Assets.xcassets */,
+				9787902C234EF74100DDCFC8 /* LaunchScreen.storyboard */,
+				976E7288235DE86D00B7F70F /* SpriteKitButton.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		97879058234F08AD00DDCFC8 /* TileSets */ = {
+			isa = PBXGroup;
+			children = (
+				97879051234F010F00DDCFC8 /* BirdTileSet.sks */,
+			);
+			path = TileSets;
+			sourceTree = "<group>";
+		};
+		97BAC981234F0F4B00525759 /* Custom Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				97D3DB782386E5EB00EED656 /* Slingshot */,
+				97D3DB772386E5D600EED656 /* Enemies */,
+				97D3DB762386E5CE00EED656 /* Blocks */,
+				97D3DB752386E5B700EED656 /* Birds */,
+				97BAC982234F0F7100525759 /* GameCamera.swift */,
+				977364832361B96E008DC47F /* Camera.swift */,
+				97135F89238AA803002F464D /* GameObject.swift */,
+			);
+			path = "Custom Nodes";
+			sourceTree = "<group>";
+		};
+		97D3DB752386E5B700EED656 /* Birds */ = {
+			isa = PBXGroup;
+			children = (
+				97DAAC0B237716EE0080FBDA /* GameObjectsFactory.swift */,
+				97BAC986234F336400525759 /* Bird.swift */,
+				971699DA237774C300AB5B1D /* BirdStrategy.swift */,
+			);
+			path = Birds;
+			sourceTree = "<group>";
+		};
+		97D3DB762386E5CE00EED656 /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				976C6CC22358DFA400A60921 /* Block.swift */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		97D3DB772386E5D600EED656 /* Enemies */ = {
+			isa = PBXGroup;
+			children = (
+				973CE50D2360B88100ACE9D5 /* Enemy.swift */,
+			);
+			path = Enemies;
+			sourceTree = "<group>";
+		};
+		97D3DB782386E5EB00EED656 /* Slingshot */ = {
+			isa = PBXGroup;
+			children = (
+				971699E12378067F00AB5B1D /* SlingshotState.swift */,
+				977364812360C641008DC47F /* RealSlingshot.swift */,
+				97D3DB792386E60A00EED656 /* ProxySlingshot.swift */,
+			);
+			path = Slingshot;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97879019234EF73E00DDCFC8 /* AngryBirdsADP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97879048234EF74200DDCFC8 /* Build configuration list for PBXNativeTarget "AngryBirdsADP" */;
+			buildPhases = (
+				F78830F66904E557D85318D3 /* [CP] Check Pods Manifest.lock */,
+				97879016234EF73E00DDCFC8 /* Sources */,
+				97879017234EF73E00DDCFC8 /* Frameworks */,
+				97879018234EF73E00DDCFC8 /* Resources */,
+				2DE7FCAE8CFBD52169A43D2F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AngryBirdsADP;
+			productName = AngryBirdsADP;
+			productReference = 9787901A234EF73E00DDCFC8 /* AngryBirdsADP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97879033234EF74100DDCFC8 /* AngryBirdsADPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9787904B234EF74200DDCFC8 /* Build configuration list for PBXNativeTarget "AngryBirdsADPTests" */;
+			buildPhases = (
+				6177F35F323CEF994B691196 /* [CP] Check Pods Manifest.lock */,
+				97879030234EF74100DDCFC8 /* Sources */,
+				97879031234EF74100DDCFC8 /* Frameworks */,
+				97879032234EF74100DDCFC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97879036234EF74100DDCFC8 /* PBXTargetDependency */,
+			);
+			name = AngryBirdsADPTests;
+			productName = AngryBirdsADPTests;
+			productReference = 97879034234EF74100DDCFC8 /* AngryBirdsADPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9787903E234EF74200DDCFC8 /* AngryBirdsADPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9787904E234EF74200DDCFC8 /* Build configuration list for PBXNativeTarget "AngryBirdsADPUITests" */;
+			buildPhases = (
+				DC72F8366BCF1A659D413C29 /* [CP] Check Pods Manifest.lock */,
+				9787903B234EF74200DDCFC8 /* Sources */,
+				9787903C234EF74200DDCFC8 /* Frameworks */,
+				9787903D234EF74200DDCFC8 /* Resources */,
+				973D3D8E9CAF75E1528FB3B7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97879041234EF74200DDCFC8 /* PBXTargetDependency */,
+			);
+			name = AngryBirdsADPUITests;
+			productName = AngryBirdsADPUITests;
+			productReference = 9787903F234EF74200DDCFC8 /* AngryBirdsADPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97879012234EF73E00DDCFC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Rostislav Babáček";
+				TargetAttributes = {
+					97879019234EF73E00DDCFC8 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					97879033234EF74100DDCFC8 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 97879019234EF73E00DDCFC8;
+					};
+					9787903E234EF74200DDCFC8 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 97879019234EF73E00DDCFC8;
+					};
+				};
+			};
+			buildConfigurationList = 97879015234EF73E00DDCFC8 /* Build configuration list for PBXProject "AngryBirdsADP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97879011234EF73E00DDCFC8;
+			productRefGroup = 9787901B234EF73E00DDCFC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97879019234EF73E00DDCFC8 /* AngryBirdsADP */,
+				97879033234EF74100DDCFC8 /* AngryBirdsADPTests */,
+				9787903E234EF74200DDCFC8 /* AngryBirdsADPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97879018234EF73E00DDCFC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97879052234F010F00DDCFC8 /* BirdTileSet.sks in Resources */,
+				97879029234EF73E00DDCFC8 /* Main.storyboard in Resources */,
+				971699DD2377842C00AB5B1D /* GameScene_3.sks in Resources */,
+				97879020234EF73E00DDCFC8 /* GameScene_1.sks in Resources */,
+				9787902B234EF74100DDCFC8 /* Assets.xcassets in Resources */,
+				971699DF2377845000AB5B1D /* GameScene_2.sks in Resources */,
+				9787902E234EF74100DDCFC8 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97879032234EF74100DDCFC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9787903D234EF74200DDCFC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DE7FCAE8CFBD52169A43D2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AngryBirdsADP/Pods-AngryBirdsADP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AngryBirdsADP/Pods-AngryBirdsADP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AngryBirdsADP/Pods-AngryBirdsADP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6177F35F323CEF994B691196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AngryBirdsADPTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		973D3D8E9CAF75E1528FB3B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AngryBirdsADP-AngryBirdsADPUITests/Pods-AngryBirdsADP-AngryBirdsADPUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AngryBirdsADP-AngryBirdsADPUITests/Pods-AngryBirdsADP-AngryBirdsADPUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AngryBirdsADP-AngryBirdsADPUITests/Pods-AngryBirdsADP-AngryBirdsADPUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC72F8366BCF1A659D413C29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AngryBirdsADP-AngryBirdsADPUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F78830F66904E557D85318D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AngryBirdsADP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97879016234EF73E00DDCFC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97135F84238AA32C002F464D /* Level1.swift in Sources */,
+				97879024234EF73E00DDCFC8 /* GameScene.swift in Sources */,
+				971699E22378067F00AB5B1D /* SlingshotState.swift in Sources */,
+				976C6CC32358DFA400A60921 /* Block.swift in Sources */,
+				977364822360C641008DC47F /* RealSlingshot.swift in Sources */,
+				97135F86238AA3CE002F464D /* Level2.swift in Sources */,
+				97BAC985234F2FF000525759 /* Configuration.swift in Sources */,
+				97879026234EF73E00DDCFC8 /* GameViewController.swift in Sources */,
+				97BAC983234F0F7100525759 /* GameCamera.swift in Sources */,
+				97D3DB7C2386E67000EED656 /* SceneCommand.swift in Sources */,
+				976E7289235DE86D00B7F70F /* SpriteKitButton.swift in Sources */,
+				97135F88238AA5AF002F464D /* Memento.swift in Sources */,
+				976E7287235DE23800B7F70F /* LevelScene.swift in Sources */,
+				973CE50E2360B88100ACE9D5 /* Enemy.swift in Sources */,
+				97BAC987234F336400525759 /* Bird.swift in Sources */,
+				9787901E234EF73E00DDCFC8 /* AppDelegate.swift in Sources */,
+				97135F8C238AA825002F464D /* Visitor.swift in Sources */,
+				977364842361B96E008DC47F /* Camera.swift in Sources */,
+				972B2E31235F8055001D2005 /* GameModel.swift in Sources */,
+				97D3DB7A2386E60A00EED656 /* ProxySlingshot.swift in Sources */,
+				97135F82238AA223002F464D /* LevelBuilder.swift in Sources */,
+				97DAAC0C237716EE0080FBDA /* GameObjectsFactory.swift in Sources */,
+				971699DB237774C300AB5B1D /* BirdStrategy.swift in Sources */,
+				97135F8A238AA803002F464D /* GameObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97879030234EF74100DDCFC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97135F92238AB39B002F464D /* BirdMock.swift in Sources */,
+				97879039234EF74100DDCFC8 /* BlockTests.swift in Sources */,
+				97135F90238AB389002F464D /* BirdTests.swift in Sources */,
+				973CB48E238B032300122944 /* GameModelTests.swift in Sources */,
+				97135F8E238AB021002F464D /* BlockMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9787903B234EF74200DDCFC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97879044234EF74200DDCFC8 /* AngryBirdsADPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97879036234EF74100DDCFC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97879019234EF73E00DDCFC8 /* AngryBirdsADP */;
+			targetProxy = 97879035234EF74100DDCFC8 /* PBXContainerItemProxy */;
+		};
+		97879041234EF74200DDCFC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97879019234EF73E00DDCFC8 /* AngryBirdsADP */;
+			targetProxy = 97879040234EF74200DDCFC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97879027234EF73E00DDCFC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97879028234EF73E00DDCFC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9787902C234EF74100DDCFC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9787902D234EF74100DDCFC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97879046234EF74200DDCFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97879047234EF74200DDCFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97879049234EF74200DDCFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D56E165BC190EDB9D9CF57D /* Pods-AngryBirdsADP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GRHTXFGCU;
+				INFOPLIST_FILE = AngryBirdsADP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.cz.fit.cvut.cz.spacepe2.AngryBirdsADP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9787904A234EF74200DDCFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DBDA93BC1C2D61C135E5057 /* Pods-AngryBirdsADP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GRHTXFGCU;
+				INFOPLIST_FILE = AngryBirdsADP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.cz.fit.cvut.cz.spacepe2.AngryBirdsADP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9787904C234EF74200DDCFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0B0D2ACD254F6B13C17A93 /* Pods-AngryBirdsADPTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GRHTXFGCU;
+				INFOPLIST_FILE = AngryBirdsADPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.cz.fit.cvut.cz.spacepe2.AngryBirdsADPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngryBirdsADP.app/AngryBirdsADP";
+			};
+			name = Debug;
+		};
+		9787904D234EF74200DDCFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1133E25E187DD1CEC1086388 /* Pods-AngryBirdsADPTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GRHTXFGCU;
+				INFOPLIST_FILE = AngryBirdsADPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.cz.fit.cvut.cz.spacepe2.AngryBirdsADPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngryBirdsADP.app/AngryBirdsADP";
+			};
+			name = Release;
+		};
+		9787904F234EF74200DDCFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7078607657BADC64F41E883C /* Pods-AngryBirdsADP-AngryBirdsADPUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GRHTXFGCU;
+				INFOPLIST_FILE = AngryBirdsADPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.cz.fit.cvut.cz.spacepe2.AngryBirdsADPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AngryBirdsADP;
+			};
+			name = Debug;
+		};
+		97879050234EF74200DDCFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA234B1239C11BADA68C471 /* Pods-AngryBirdsADP-AngryBirdsADPUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GRHTXFGCU;
+				INFOPLIST_FILE = AngryBirdsADPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.cz.fit.cvut.cz.spacepe2.AngryBirdsADPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AngryBirdsADP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97879015234EF73E00DDCFC8 /* Build configuration list for PBXProject "AngryBirdsADP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97879046234EF74200DDCFC8 /* Debug */,
+				97879047234EF74200DDCFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97879048234EF74200DDCFC8 /* Build configuration list for PBXNativeTarget "AngryBirdsADP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97879049234EF74200DDCFC8 /* Debug */,
+				9787904A234EF74200DDCFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9787904B234EF74200DDCFC8 /* Build configuration list for PBXNativeTarget "AngryBirdsADPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9787904C234EF74200DDCFC8 /* Debug */,
+				9787904D234EF74200DDCFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9787904E234EF74200DDCFC8 /* Build configuration list for PBXNativeTarget "AngryBirdsADPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9787904F234EF74200DDCFC8 /* Debug */,
+				97879050234EF74200DDCFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97879012234EF73E00DDCFC8 /* Project object */;
+}
